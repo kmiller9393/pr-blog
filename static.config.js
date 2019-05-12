@@ -31,6 +31,9 @@ const query = `
 `
 
 export default {
+  getSiteData: () => ({
+    title: 'Kimaleen Tran'
+  }),
   getRoutes: async () => {
     const { authors, posts } = await request(GRAPHCMS_ENDPOINT, query)
 
@@ -42,11 +45,18 @@ export default {
         }),
         children: posts.map(post => ({
           path: `/post/${post.id}`,
-          template: 'src/containers/Post',
+          template: 'src/pages/post',
           getData: () => ({
             post
           })
         }))
+      },
+      {
+        path: '/about',
+        component: 'src/pages/about',
+        getData: () => ({
+          authors
+        })
       }
     ];
   },
