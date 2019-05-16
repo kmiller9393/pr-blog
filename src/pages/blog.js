@@ -1,30 +1,33 @@
-import React from 'react'
-import { useRouteData } from 'react-static'
-//
-import { Link } from 'components/Router'
+import React from 'react';
+import { withRouteData } from 'react-static';
+import { Link } from '@reach/router';
 
-export default function Blog() {
-  const { posts } = useRouteData()
-  return (
-    <div>
-      <h1>It's blog time.</h1>
-      <div>
-        <a href="#bottom" id="top">
-          Scroll to bottom!
-        </a>
-      </div>
-      <br />
-      All Posts:
-      <ul>
-        {posts.map(post => (
-          <li key={post.id}>
-            <Link to={`/blog/post/${post.id}/`}>{post.title}</Link>
-          </li>
-        ))}
-      </ul>
-      <a href="#top" id="bottom">
-        Scroll to top!
-      </a>
-    </div>
-  )
-}
+export default withRouteData(({ posts }) => (
+  <div className="container">
+    {posts.map(post => (
+      <Link key={post.id} to={`/post/${post.id}`} className="card">
+        <div style={{ paddingRight: '1rem' }}>
+          <img
+            alt={post.title}
+            className="card-img"
+            src={`https://media.graphcms.com/resize=w:170,h:150,fit:crop/${
+              post.image.handle
+            }`}
+          />
+        </div>
+        <div>
+          <h3 style={{ color: '#2b2b2b', margin: 0 }}>{post.title}</h3>
+          <p style={{ color: '#2b2b2b', display: 'flex' }}>
+            <img src={'https://icon.now.sh/face/2386ea'} alt="author" />
+            {post.author.name}
+          </p>
+          {post.tags.map(tag => (
+            <span className="card-tag" key={tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+      </Link>
+    ))}
+  </div>
+));
