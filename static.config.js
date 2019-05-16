@@ -1,7 +1,8 @@
 import { request } from 'graphql-request';
 import path from 'path';
 
-const GRAPHCMS_ENDPOINT = 'https://api-uswest.graphcms.com/v1/cjvjziu5s627901ehblbcdtu9/master';
+const GRAPHCMS_ENDPOINT =
+  'https://api-uswest.graphcms.com/v1/cjvjziu5s627901ehblbcdtu9/master';
 
 const query = `
 {
@@ -27,19 +28,43 @@ const query = `
     }
     bibliography
   }
+
+  homes{
+    opening
+    image{
+      id
+      handle
+    }
+    id
+  }
 }
-`
+`;
 
 export default {
   getSiteData: () => ({
     title: 'Kimaleen Tran'
   }),
   getRoutes: async () => {
-    const { authors, posts } = await request(GRAPHCMS_ENDPOINT, query)
+    const { authors, posts, homes } = await request(GRAPHCMS_ENDPOINT, query);
 
     return [
       {
         path: '/',
+        component: 'src/pages/index.js',
+        getData: () => ({
+          homes,
+          posts
+        }),
+        children: posts.map(post => ({
+          path: `/post/${post.id}`,
+          template: 'src/pages/post',
+          getData: () => ({
+            post
+          })
+        }))
+      },
+      {
+        path: '/blog',
         getData: () => ({
           posts
         }),
