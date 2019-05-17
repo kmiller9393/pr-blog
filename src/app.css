@@ -91,6 +91,12 @@ header {
   text-align: center;
 }
 
+#home:hover,
+#about:hover,
+#blog:hover {
+  color: darkred;
+}
+
 .header-h1 {
   color: #2b2b2b;
   font: 50px 'Arizonia', Helvetica, sans-serif;

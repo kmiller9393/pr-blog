@@ -10,13 +10,13 @@ export default withSiteData(({ title }) => (
   <header className="header">
     <h1 className="header-h1">{title}</h1>
     <nav className="header-nav">
-      <Link getProps={isActive} className="header-link" to="/">
+      <Link getProps={isActive} className="header-link" id="home" to="/">
         Home
       </Link>
-      <Link getProps={isActive} className="header-link" to="/about">
+      <Link getProps={isActive} className="header-link" id="about" to="/about">
         About
       </Link>
-      <Link getProps={isActive} className="header-link" to="/blog">
+      <Link getProps={isActive} className="header-link" id="blog" to="/blog">
         Blog
       </Link>
     </nav>
