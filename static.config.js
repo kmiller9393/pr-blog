@@ -28,15 +28,6 @@ const query = `
     }
     bibliography
   }
-
-  homes{
-    opening
-    image{
-      id
-      handle
-    }
-    id
-  }
 }
 `;
 
@@ -45,14 +36,13 @@ export default {
     title: 'Kimaleen Tran'
   }),
   getRoutes: async () => {
-    const { authors, posts, homes } = await request(GRAPHCMS_ENDPOINT, query);
+    const { authors, posts } = await request(GRAPHCMS_ENDPOINT, query);
 
     return [
       {
         path: '/',
         component: 'src/pages/index.js',
         getData: () => ({
-          homes,
           posts
         }),
         children: posts.map(post => ({
