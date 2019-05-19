@@ -21,18 +21,38 @@ a {
 .image-container {
   display: flex;
   justify-content: center;
+  height: 65vh;
+  width: 100vw;
 }
 
-.home-image {
-  height: 1000px;
-  width: 700px;
+.banner-image {
+  background-image: url('https://images.unsplash.com/photo-1471967183320-ee018f6e114a?ixlib=rb-1.2.1&auto=format&fit=crop&w=1051&q=80');
+  background-position: center top;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+}
+
+.banner-text {
+  color: #f7f7f7;
+  font: 50px 'Arizonia', Helvetica, sans-serif;
+  position: absolute;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.6);
+  top: 50vh;
+  width: 50vw;
+}
+
+.banner-text-1 {
+  color: #f7f7f7;
+  font: 50px 'Arizonia', Helvetica, sans-serif;
+  margin-left: 2rem;
+  position: absolute;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.6);
+  top: 59vh;
+  width: 50vw;
 }
 
 /* Blog */
-.container {
-  max-width: 960;
-}
-
 .card {
   display: flex;
   align-items: center;
@@ -65,11 +85,6 @@ a {
   background-color: #eee;
 }
 
-article {
-  margin: 0 auto;
-  max-width: 650px;
-}
-
 /* About */
 .about-avatar {
   height: 150px;
@@ -87,7 +102,7 @@ article {
 /* Header */
 header {
   padding: 24px 32px;
-  margin-bottom: 32px;
+  margin-bottom: 1rem;
   text-align: center;
 }
 
@@ -103,6 +118,7 @@ header {
   margin-top: 0;
   padding-bottom: 2px;
   font-weight: 100;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .header-nav {
@@ -116,6 +132,7 @@ header {
   color: #2b2b2b;
   font-size: 18px;
   margin-right: 16px;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .active {
@@ -123,10 +140,6 @@ header {
   font-size: 18px;
   margin-right: 16px;
   font-weight: bold;
-}
-
-img {
-  max-width: 100%;
 }
 
 nav {
@@ -139,5 +152,5 @@ nav a {
 }
 
 .content {
-  padding: 1rem;
+  padding-top: 1rem;
 }
