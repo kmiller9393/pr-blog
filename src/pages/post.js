@@ -3,8 +3,8 @@ import { withRouteData } from 'react-static';
 import Markdown from 'react-markdown';
 
 export default withRouteData(({ post }) => (
-  <article>
-    <h1>{post.title}</h1>
+  <article className="blog-card">
+    <h1 className="post-main-title ">{post.title}</h1>
     <div className="placeholder">
       <img
         alt={post.title}
@@ -13,6 +13,8 @@ export default withRouteData(({ post }) => (
         }`}
       />
     </div>
-    <Markdown source={post.content} />
+    <div className="blog-content">
+      <Markdown source={post.content} />
+    </div>
   </article>
 ));
