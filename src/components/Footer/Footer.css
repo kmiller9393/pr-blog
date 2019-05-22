@@ -10,3 +10,9 @@
 .footer-header {
   color: #f7f7f7e5;
 }
+
+.weekly-email {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
