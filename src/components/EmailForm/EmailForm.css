@@ -17,9 +17,9 @@
   color: #f7f7f7;
   cursor: pointer;
   font-size: 0.9rem;
-  height: 35px;
+  height: 37px;
   width: 176px;
-  margin: 0.5rem;
+  margin-top: 0.75rem;
 }
 
 .save-button:hover {
