@@ -1,7 +1,7 @@
 .footer {
   background-color: #181818;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-evenly;
   height: 350px;
   width: 100%;
   width: 100vw;
