@@ -13,7 +13,6 @@ const query = `
       handle
     }
     content
-    tags
     author{
       id
       name
