@@ -13,7 +13,11 @@ export default withSiteData(({ title }) => (
   <header>
     <div className="title-link-container">
       <div />
-      <h1 className="header-h1">{title}</h1>
+      <h1 className="header-h1">
+        <Link className="main-header-link" to="/">
+          {title}
+        </Link>
+      </h1>
       <div className="header-link-container">
         <a
           href="https://www.instagram.com/kimaleentran/"
