@@ -1,0 +1,29 @@
+.email-form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  font-size: 0.95rem;
+  height: 35px;
+  width: 170px;
+  margin: 0.3rem;
+}
+
+.save-button {
+  background-color: #181818;
+  border-color: #f7f7f7;
+  color: #f7f7f7;
+  cursor: pointer;
+  font-size: 0.9rem;
+  height: 35px;
+  width: 176px;
+  margin: 0.5rem;
+}
+
+.save-button:hover {
+  background-color: rgb(227, 110, 7);
+  border-color: rgb(227, 110, 7);
+  color: whitesmoke;
+}
