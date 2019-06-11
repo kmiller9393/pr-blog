@@ -18,14 +18,8 @@ export default withRouteData(({ posts }) => (
         <div>
           <h3 style={{ color: '#2b2b2b', margin: 0 }}>{post.title}</h3>
           <p style={{ color: '#2b2b2b', display: 'flex' }}>
-            <img src={'https://icon.now.sh/face/2386ea'} alt="author" />
-            {post.author.name}
+            By {post.author.name}
           </p>
-          {post.tags.map(tag => (
-            <span className="card-tag" key={tag}>
-              {tag}
-            </span>
-          ))}
         </div>
       </Link>
     ))}
