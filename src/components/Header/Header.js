@@ -12,10 +12,17 @@ const isActive = ({ isCurrent }) => {
 export default withSiteData(({ title }) => (
   <header>
     <div className="title-link-container">
-      <div />
+      <nav className="header-nav">
+        <Link getProps={isActive} className="header-link" id="home" to="/">
+          Home
+        </Link>
+        <Link getProps={isActive} className="header-link" id="blog" to="/blog">
+          Blog
+        </Link>
+      </nav>
       <h1 className="header-h1">
         <Link className="main-header-link" to="/">
-          {title}
+          KIMALEEN
         </Link>
       </h1>
       <div className="header-link-container">
@@ -42,16 +49,5 @@ export default withSiteData(({ title }) => (
         </a>
       </div>
     </div>
-    <nav className="header-nav">
-      <Link getProps={isActive} className="header-link" id="home" to="/">
-        Home
-      </Link>
-      <Link getProps={isActive} className="header-link" id="about" to="/about">
-        About
-      </Link>
-      <Link getProps={isActive} className="header-link" id="blog" to="/blog">
-        Blog
-      </Link>
-    </nav>
   </header>
 ));
