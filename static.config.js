@@ -42,7 +42,8 @@ export default {
         path: '/',
         component: 'src/pages/index.js',
         getData: () => ({
-          posts
+          posts,
+          authors
         }),
         children: posts.map(post => ({
           path: `/post/${post.id}`,
