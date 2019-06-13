@@ -10,21 +10,37 @@ const isActive = ({ isCurrent }) => {
 };
 
 export default withSiteData(({ title }) => (
-  <header>
+  <header className="home-header">
     <div className="title-link-container">
-      <nav className="header-nav">
-        <Link getProps={isActive} className="header-link" id="home" to="/">
-          Home
-        </Link>
-        <Link getProps={isActive} className="header-link" id="blog" to="/blog">
-          Blog
-        </Link>
-      </nav>
-      <h1 className="header-h1">
-        <Link className="main-header-link" to="/">
-          KIMALEEN
-        </Link>
-      </h1>
+      <div />
+      <div>
+        <h1 className="header-h1">
+          <Link className="main-header-link" to="/">
+            KIMALEEN
+          </Link>
+        </h1>
+        <nav className="header-nav">
+          <Link getProps={isActive} className="header-link" id="home" to="/">
+            Home
+          </Link>
+          <Link
+            getProps={isActive}
+            className="header-link"
+            id="blog"
+            to="/blog"
+          >
+            Blog
+          </Link>
+          <Link
+            getProps={isActive}
+            className="header-link"
+            id="contact"
+            to="/contact"
+          >
+            Contact
+          </Link>
+        </nav>
+      </div>
       <div className="header-link-container">
         <a
           href="https://www.instagram.com/kimaleentran/"
