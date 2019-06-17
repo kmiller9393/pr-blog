@@ -12,6 +12,17 @@ class index extends Component {
     };
   }
 
+  getPosts = () => {
+    const { posts } = this.props;
+    let newPosts = [];
+
+    for (let i = 1; i <= 3; i++) {
+      newPosts.push(posts[posts.length - i]);
+    }
+
+    return newPosts;
+  };
+
   addIdea = (name, email, idea) => {
     const newIdea = { ...idea, id: Date.now() };
     const ideas = [...this.state.ideas, newIdea];
@@ -21,6 +32,8 @@ class index extends Component {
   render() {
     const { handle } = this.props.authors[0].avatar;
     const { bibliography } = this.props.authors[0];
+
+    const recentPosts = this.getPosts();
 
     return (
       <div className="home-container">
@@ -37,7 +50,7 @@ class index extends Component {
             <h4 className="signature">Kimaleen</h4>
           </aside>
         </article>
-        <RecentPosts />
+        <RecentPosts posts={recentPosts} />
         <Footer addIdea={this.addIdea} />
       </div>
     );
