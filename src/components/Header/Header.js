@@ -5,10 +5,6 @@ import instagram from '../../images/instagram.svg';
 import facebook from '../../images/facebook.svg';
 import linkedin from '../../images/linkedin.svg';
 
-const isActive = ({ isCurrent }) => {
-  return isCurrent ? { className: 'active' } : { className: 'header-link' };
-};
-
 export default withSiteData(({ title }) => (
   <header className="home-header">
     <div className="title-link-container">
@@ -19,27 +15,6 @@ export default withSiteData(({ title }) => (
             KIMALEEN
           </Link>
         </h1>
-        <nav className="header-nav">
-          <Link getProps={isActive} className="header-link" id="home" to="/">
-            Home
-          </Link>
-          <Link
-            getProps={isActive}
-            className="header-link"
-            id="blog"
-            to="/blog"
-          >
-            Blog
-          </Link>
-          <Link
-            getProps={isActive}
-            className="header-link"
-            id="contact"
-            to="/contact"
-          >
-            Contact
-          </Link>
-        </nav>
       </div>
       <div className="header-link-container">
         <a
