@@ -6,11 +6,11 @@
   align-items: center;
 }
 
-.instagram-container {
+.recent-card-container {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  width: 80%;
 }
 
 .recent-header {
