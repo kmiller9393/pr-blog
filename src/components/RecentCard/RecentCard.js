@@ -1,0 +1,18 @@
+import React from 'react';
+import './RecentCard.css';
+
+export default props => (
+  <article
+    className="post-card"
+    style={{
+      backgroundImage: `url("https://media.graphcms.com/${
+        props.image.handle
+      }")`,
+      backgroundPosition: 'center',
+      backgroundRepeat: 'no-repeat',
+      backgroundSize: '100%'
+    }}
+  >
+    <h5 className="recent-text">{props.title}</h5>
+  </article>
+);
