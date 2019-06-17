@@ -78,7 +78,7 @@ a {
 .card {
   display: flex;
   align-items: center;
-  margin-bottom: 16px;
+  margin: 16px 0;
   border: 1px solid #eee;
   overflow: hidden;
   border-radius: 5px;
@@ -91,14 +91,6 @@ a {
 .card-img {
   display: block;
   height: 100%;
-}
-
-.card-tag {
-  margin-right: 0.5rem;
-  color: white;
-  background-color: mediumaquamarine;
-  padding: 0.3rem 0.5rem;
-  border-radius: 50px;
 }
 
 /* Post */
@@ -146,8 +138,6 @@ a {
 
 /* Header */
 .home-header {
-  box-shadow: 0 0 2.5px #191919;
-  padding: 24px 32px 0 32px;
   text-align: center;
 }
 
@@ -191,13 +181,23 @@ a {
 }
 
 .header-nav {
-  margin: 0 auto;
+  box-shadow: 0 7px 6px -6px rgba(32, 33, 36, 0.28);
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
+
+.fixed-nav nav {
+  background-color: #fff;
+  position: fixed;
+  width: 100vw;
 }
 
 .header-link {
   color: #2b2b2b;
   font: 20px 'Open Sans', sans-serif;
   font-size: 15px;
+  padding: 1rem;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -205,6 +205,7 @@ a {
   color: #2b2b2b;
   font-size: 16px;
   font-weight: bold;
+  padding: 1rem;
 }
 
 nav {
@@ -212,6 +213,5 @@ nav {
 }
 
 nav a {
-  padding: 1.25rem;
   display: inline-block;
 }
