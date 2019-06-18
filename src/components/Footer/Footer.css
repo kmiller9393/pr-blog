@@ -1,12 +1,16 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 .footer {
   background-color: #181818;
   display: flex;
   justify-content: space-evenly;
-  height: 350px;
+  height: 300px;
   width: 100%;
 }
 
 .footer-header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
   color: #f7f7f7e5;
 }
 
