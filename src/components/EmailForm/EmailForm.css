@@ -6,24 +6,25 @@
 
 .input {
   font-size: 0.95rem;
-  height: 35px;
-  width: 170px;
+  height: 40px;
+  width: 200px;
   margin: 0.3rem;
 }
 
-.save-button {
+.subscribe-button {
   background-color: #181818;
   border-color: #f7f7f7;
   color: #f7f7f7;
   cursor: pointer;
-  font-size: 0.9rem;
-  height: 37px;
-  width: 176px;
+  font-size: 1rem;
+  height: 43px;
+  width: 205px;
   margin-top: 0.75rem;
+  transition: 0.3s ease-in-out;
 }
 
-.save-button:hover {
-  background-color: rgb(227, 110, 7);
-  border-color: rgb(227, 110, 7);
+.subscribe-button:hover {
+  background-color: rgba(0, 167, 33, 0.824);
+  border-color: rgba(0, 167, 33, 0.824);
   color: whitesmoke;
 }

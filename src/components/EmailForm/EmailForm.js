@@ -5,7 +5,6 @@ export default class EmailForm extends Component {
   constructor() {
     super();
     this.state = {
-      name: '',
       email: ''
     };
   }
@@ -17,23 +16,16 @@ export default class EmailForm extends Component {
 
   handleSubmit = e => {
     e.preventDefault();
-    const { name, email } = this.state;
+    const { email } = this.state;
 
-    this.props.addIdea(name, email);
+    this.props.addIdea(email);
   };
 
   render() {
-    const { name, email } = this.state;
+    const { email } = this.state;
 
     return (
       <form className="email-form" onSubmit={this.handleSubmit}>
-        <input
-          className="input"
-          name="name"
-          value={name}
-          onChange={this.handleChange}
-          placeholder="Name"
-        />
         <input
           className="input"
           name="email"
@@ -41,7 +33,7 @@ export default class EmailForm extends Component {
           onChange={this.handleChange}
           placeholder="Email"
         />
-        <button className="save-button">Sign Up!</button>
+        <button className="subscribe-button">Subscribe!</button>
       </form>
     );
   }
