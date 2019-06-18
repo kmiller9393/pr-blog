@@ -12,8 +12,9 @@
 }
 
 .post-card:hover {
+  box-shadow: 0 0 5px #191919;
   transform: translateY(-3.5px);
-  box-shadow: 0 3px 2px 2px rgba(0, 0, 0, 0.6);
+  -webkit-box-shadow: 0 0 5px #191919;
 }
 
 .recent-text {
