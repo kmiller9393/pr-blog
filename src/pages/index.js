@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { withRouteData } from 'react-static';
 import RecentPosts from '../components/RecentPosts/RecentPosts';
-import InstaPost from '../components/InstaPost/InstaPost';
 import Footer from '../components/Footer/Footer';
 
 class index extends Component {
@@ -17,13 +16,15 @@ class index extends Component {
     let newPosts = [];
 
     for (let i = 1; i <= 3; i++) {
-      newPosts.push(posts[posts.length - i]);
+      if (posts[posts.length - i]) {
+        newPosts.push(posts[posts.length - i]);
+      }
     }
 
     return newPosts;
   };
 
-  addIdea = (name, email, idea) => {
+  addIdea = (email, idea) => {
     const newIdea = { ...idea, id: Date.now() };
     const ideas = [...this.state.ideas, newIdea];
     this.setState({ ideas });
