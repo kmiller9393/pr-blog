@@ -72,10 +72,15 @@ a {
 
 .signature {
   font: 65px 'Dr Sugiyama', cursive;
-  margin-top: 1rem;
+  margin: 1rem 0 0 0;
 }
 
 /* Blog */
+.blog-container {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
 .card {
   display: flex;
   align-items: center;
@@ -187,7 +192,6 @@ a {
   display: flex;
   justify-content: center;
   width: 100vw;
-  /* z-index: 1000; */
 }
 
 .fixed-nav nav {
