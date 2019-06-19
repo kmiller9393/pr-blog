@@ -3,7 +3,7 @@ import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
 
 export default withRouteData(({ posts }) => (
-  <div className="container">
+  <div className="blog-container">
     {posts.map(post => (
       <Link key={post.id} to={`/post/${post.id}`} className="card">
         <div style={{ paddingRight: '1rem' }}>
