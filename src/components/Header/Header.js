@@ -4,6 +4,7 @@ import { withSiteData } from 'react-static';
 import instagram from '../../images/instagram.svg';
 import facebook from '../../images/facebook.svg';
 import linkedin from '../../images/linkedin.svg';
+import './Header.css';
 
 export default withSiteData(({ title }) => (
   <header className="home-header">

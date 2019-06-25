@@ -9,20 +9,26 @@
   width: 100%;
 }
 
-.footer-header {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 22px;
-  color: #f7f7f7e5;
-}
-
 .weekly-email {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
+.footer-header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px;
+  color: #f7f7f7e5;
+}
+
 .footer-link-container {
   display: flex;
   justify-content: center;
   padding-top: 3rem;
+}
+
+.social-image {
+  height: 20px;
+  width: 20px;
+  padding: 0.6rem;
 }

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from '../Router/Router';
 import { toggleStickyNav } from '../../utils/toggleStickyNav.js';
+import './Navbar.css';
 
 const isActive = ({ isCurrent }) => {
   return isCurrent ? { className: 'active' } : { className: 'header-link' };

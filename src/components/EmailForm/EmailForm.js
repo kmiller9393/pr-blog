@@ -27,7 +27,7 @@ export default class EmailForm extends Component {
     return (
       <form className="email-form" onSubmit={this.handleSubmit}>
         <input
-          className="input"
+          className="email-input"
           name="email"
           value={email}
           onChange={this.handleChange}

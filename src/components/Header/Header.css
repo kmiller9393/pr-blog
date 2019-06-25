@@ -1,0 +1,36 @@
+.home-header {
+  text-align: center;
+}
+
+.title-link-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+}
+
+.header-h1 {
+  font: 65px 'Oswald', sans-serif;
+  font-style: italic;
+  font-weight: bold;
+  font-weight: 100;
+  margin-top: -0.5rem;
+  margin-bottom: 0;
+  text-align: center;
+  text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
+}
+
+.main-header-link {
+  color: #2b2b2b;
+}
+
+.header-link-container {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 3rem;
+  margin-top: 0.5rem;
+}
+
+.social-image {
+  height: 20px;
+  width: 20px;
+  padding: 0.6rem;
+}

@@ -4,7 +4,7 @@
   flex-direction: column;
 }
 
-.input {
+.email-input {
   font-size: 0.95rem;
   height: 40px;
   width: 200px;
@@ -26,5 +26,5 @@
 .subscribe-button:hover {
   background-color: #368fcd;
   border-color: #368fcd;
-  color: #191919;
+  color: #fff;
 }
