@@ -18,10 +18,23 @@ export default class Navbar extends Component {
   render() {
     return (
       <nav className="header-nav">
-        <Link getProps={isActive} className="header-link" id="home" to="/">
+        <span className="logo">K</span>
+        <Link
+          getProps={isActive}
+          className="header-link"
+          id="home"
+          to="/"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           Home
         </Link>
-        <Link getProps={isActive} className="header-link" id="blog" to="/blog">
+        <Link
+          getProps={isActive}
+          className="header-link"
+          id="blog"
+          to="/blog"
+          onClick={() => window.scrollTo(0, 0)}
+        >
           Blog
         </Link>
         <Link
@@ -29,6 +42,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="contact"
           to="/contact"
+          onClick={() => window.scrollTo(0, 0)}
         >
           Contact
         </Link>
