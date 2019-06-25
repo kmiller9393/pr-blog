@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from '../Router/Router';
 import { toggleStickyNav } from '../../utils/toggleStickyNav.js';
+import scrollToTop from '../../utils/scrollToTop';
 import './Navbar.css';
 
 const isActive = ({ isCurrent }) => {
@@ -25,7 +26,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="home"
           to="/"
-          onClick={() => window.scrollTo(0, 0)}
+          onClick={scrollToTop}
         >
           Home
         </Link>
@@ -34,7 +35,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="blog"
           to="/blog"
-          onClick={() => window.scrollTo(0, 0)}
+          onClick={scrollToTop}
         >
           Blog
         </Link>
@@ -43,7 +44,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="contact"
           to="/contact"
-          onClick={() => window.scrollTo(0, 0)}
+          onClick={scrollToTop}
         >
           Contact
         </Link>
