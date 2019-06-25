@@ -24,7 +24,7 @@
 }
 
 .subscribe-button:hover {
-  background-color: rgba(0, 167, 33, 0.824);
-  border-color: rgba(0, 167, 33, 0.824);
-  color: whitesmoke;
+  background-color: #368fcd;
+  border-color: #368fcd;
+  color: #191919;
 }
