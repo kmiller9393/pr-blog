@@ -9,7 +9,7 @@ export default withRouteData(({ post }) => (
       <img
         alt={post.title}
         src={`https://media.graphcms.com/resize=w:650,h:366,fit:crop/${
-          post.image.handle
+          post.image[0].handle
         }`}
       />
     </div>

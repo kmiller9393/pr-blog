@@ -6,7 +6,7 @@ export default props => (
     className="post-card"
     style={{
       backgroundImage: `url("https://media.graphcms.com/${
-        props.image.handle
+        props.image[0].handle
       }")`,
       backgroundPosition: 'center',
       backgroundRepeat: 'no-repeat',

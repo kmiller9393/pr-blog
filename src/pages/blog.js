@@ -17,7 +17,7 @@ export default withRouteData(({ posts }) => (
             alt={post.title}
             className="card-img"
             src={`https://media.graphcms.com/resize=w:170,h:150,fit:crop/${
-              post.image.handle
+              post.image[0].handle
             }`}
           />
         </div>
