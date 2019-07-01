@@ -42,6 +42,33 @@ export default class Navbar extends Component {
         <Link
           getProps={isActive}
           className="header-link"
+          id="travel"
+          to="/travel"
+          onClick={scrollToTop}
+        >
+          Travel
+        </Link>
+        <Link
+          getProps={isActive}
+          className="header-link"
+          id="fashion"
+          to="/fashion"
+          onClick={scrollToTop}
+        >
+          Fashion
+        </Link>
+        <Link
+          getProps={isActive}
+          className="header-link"
+          id="food"
+          to="/food"
+          onClick={scrollToTop}
+        >
+          Food
+        </Link>
+        <Link
+          getProps={isActive}
+          className="header-link"
           id="contact"
           to="/contact"
           onClick={scrollToTop}

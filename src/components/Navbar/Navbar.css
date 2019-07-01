@@ -50,6 +50,9 @@ span.logo {
 
 #home:hover,
 #contact:hover,
-#blog:hover {
+#blog:hover,
+#fashion:hover,
+#travel:hover,
+#food:hover {
   border-bottom: 2px solid #2b2b2b;
 }
