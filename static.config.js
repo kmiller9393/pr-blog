@@ -13,6 +13,7 @@ const query = `
       handle
     }
     content
+    tag
     author{
       id
       name
@@ -72,6 +73,48 @@ export default {
         getData: () => ({
           authors
         })
+      },
+      {
+        path: '/fashion',
+        component: 'src/pages/fashion',
+        getData: () => ({
+          posts
+        }),
+        children: posts.map(post => ({
+          path: `/post/${post.id}`,
+          template: 'src/pages/post',
+          getData: () => ({
+            post
+          })
+        }))
+      },
+      {
+        path: '/travel',
+        component: 'src/pages/travel',
+        getData: () => ({
+          posts
+        }),
+        children: posts.map(post => ({
+          path: `/post/${post.id}`,
+          template: 'src/pages/post',
+          getData: () => ({
+            post
+          })
+        }))
+      },
+      {
+        path: '/food',
+        component: 'src/pages/food',
+        getData: () => ({
+          posts
+        }),
+        children: posts.map(post => ({
+          path: `/post/${post.id}`,
+          template: 'src/pages/post',
+          getData: () => ({
+            post
+          })
+        }))
       }
     ];
   },
