@@ -31,7 +31,7 @@ export default class EmailForm extends Component {
           name="email"
           value={email}
           onChange={this.handleChange}
-          placeholder="Email"
+          placeholder="Email Address"
         />
         <button className="subscribe-button">Subscribe!</button>
       </form>
