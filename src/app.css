@@ -75,7 +75,7 @@ a {
   margin: 1rem 0 0 0;
 }
 
-/* Blog */
+/* Blog Pages */
 .blog-container {
   display: flex;
   flex-direction: column-reverse;
@@ -126,4 +126,15 @@ a {
 .blog-content p {
   line-height: 160%;
   text-indent: 1rem;
+}
+
+/* Contact */
+.contact-container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-header {
+  font: 30px 'Open Sans', sans-serif;
 }
