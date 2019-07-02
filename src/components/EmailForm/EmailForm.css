@@ -28,3 +28,19 @@
   border-color: #368fcd;
   color: #fff;
 }
+
+::placeholder {
+  padding-left: 0.5rem;
+}
+
+::-moz-placeholder {
+  padding-left: 0.5rem;
+}
+
+:-moz-placeholder {
+  padding-left: 0.5rem;
+}
+
+:-ms-input-placeholder {
+  padding-left: 0.5rem;
+}
