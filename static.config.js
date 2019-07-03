@@ -75,8 +75,8 @@ export default {
         })
       },
       {
-        path: '/fashion',
-        component: 'src/pages/fashion',
+        path: '/lifestyle',
+        component: 'src/pages/lifestyle',
         getData: () => ({
           posts
         }),
