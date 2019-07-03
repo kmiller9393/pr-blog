@@ -42,20 +42,20 @@ export default class Navbar extends Component {
         <Link
           getProps={isActive}
           className="header-link"
+          id="lifestyle"
+          to="/lifestyle"
+          onClick={scrollToTop}
+        >
+          Life + Style
+        </Link>
+        <Link
+          getProps={isActive}
+          className="header-link"
           id="travel"
           to="/travel"
           onClick={scrollToTop}
         >
           Travel
-        </Link>
-        <Link
-          getProps={isActive}
-          className="header-link"
-          id="fashion"
-          to="/fashion"
-          onClick={scrollToTop}
-        >
-          Fashion
         </Link>
         <Link
           getProps={isActive}
