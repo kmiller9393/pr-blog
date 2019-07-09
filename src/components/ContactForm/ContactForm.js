@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import * as emailjs from 'emailjs-com';
 import './ContactForm.css';
 
 export default class ContactForm extends Component {
@@ -7,9 +8,11 @@ export default class ContactForm extends Component {
     this.state = {
       firstName: '',
       lastName: '',
-      email: '',
+      senderEmail: '',
       subject: '',
-      message: ''
+      feedback: '',
+      formSubmitted: false,
+      formEmailSent: false
     };
   }
 
@@ -18,11 +21,37 @@ export default class ContactForm extends Component {
     this.setState({ [name]: value });
   };
 
+  handleSubmit(e) {
+    e.preventDefault();
+
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+    const receiverEmail = process.env.REACT_APP_EMAILJS_RECEIVER;
+
+    const { senderEmail, feedback } = this.state;
+
+    this.sendFeedback(templateId, senderEmail, receiverEmail, feedback);
+
+    this.setState({
+      formSubmitted: true
+    });
+  }
+
+  sendFeedback(templateId, senderEmail, receiverEmail, feedback) {
+    emailjs
+      .send('mailgun', templateId, {
+        senderEmail,
+        receiverEmail,
+        feedback
+      })
+      .then(res => this.setState({ formEmailSent: true }))
+      .catch(err => console.error('Failed to send email. Error: ', err));
+  }
+
   render() {
-    const { email, firstName, lastName, subject, message } = this.state;
+    const { senderEmail, firstName, lastName, subject, feedback } = this.state;
 
     return (
-      <form className="contact-form">
+      <form className="contact-form" onSubmit={e => this.handleSubmit(e)}>
         <div className="contact-info">
           <div>
             <input
@@ -31,6 +60,7 @@ export default class ContactForm extends Component {
               value={firstName}
               onChange={this.handleChange}
               placeholder="First Name"
+              required
             />
             <input
               className="contact-input"
@@ -38,15 +68,17 @@ export default class ContactForm extends Component {
               value={lastName}
               onChange={this.handleChange}
               placeholder="Last Name"
+              required
             />
           </div>
           <input
             className="contact-input"
             id="email-input"
-            name="email"
-            value={email}
+            name="senderEmail"
+            value={senderEmail}
             onChange={this.handleChange}
             placeholder="Email Address"
+            required
           />
           <input
             className="contact-input"
@@ -55,13 +87,15 @@ export default class ContactForm extends Component {
             value={subject}
             onChange={this.handleChange}
             placeholder="Subject"
+            required
           />
           <textarea
             className="contact-message"
-            name="message"
-            value={message}
+            name="feedback"
+            value={feedback}
             onChange={this.handleChange}
             placeholder="Message"
+            required
           />
         </div>
         <button className="contact-info-button">Connect!</button>
