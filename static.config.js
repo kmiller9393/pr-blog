@@ -1,5 +1,7 @@
 import { request } from 'graphql-request';
 import path from 'path';
+import dotenv from 'dotenv';
+dotenv.config();
 
 const GRAPHCMS_ENDPOINT =
   'https://api-uswest.graphcms.com/v1/cjvjziu5s627901ehblbcdtu9/master';
