@@ -7,6 +7,7 @@ nav a {
 }
 
 .header-nav {
+  background-color: #fff;
   box-shadow: 0 7px 6px -6px rgba(32, 33, 36, 0.28);
   display: flex;
   justify-content: center;
