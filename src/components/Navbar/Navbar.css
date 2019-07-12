@@ -8,9 +8,10 @@ nav a {
 
 .header-nav {
   background-color: #fff;
-  box-shadow: 0 7px 6px -6px rgba(32, 33, 36, 0.28);
+  box-shadow: 0 7px 6px -6px rgba(32, 33, 36, 0.35);
   display: flex;
   justify-content: center;
+  position: relative;
   width: 100vw;
 }
 
