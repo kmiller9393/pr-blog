@@ -1,8 +1,8 @@
 # HerBlog
 
-HerBlog is a web application that utilizes data fetched from a GraphQL endpoint to display blog posts related to travel, fashion and lifestyle. This application also allows visitors to the site to send emails to contact the blog owner directly with feedback and messages. This app is built with React.js, React Static, GraphQL, GraphCMS and Express.js.
+HerBlog is a web application that utilizes data fetched from a GraphQL endpoint to display blog posts filtered by travel, food and lifestyle. This application also allows visitors to the site to send emails to contact the blog owner directly with feedback and messages. This app is built with React.js, React Static, GraphQL, GraphCMS and Express.js.
 
-## NOTE: Currently adding finishing touches to application and then will deploy to production.
+## NOTE: Currently adding finishing touches to application (work in progress) before deploying to production.
 
 ## Starting the Application Locally:
 
