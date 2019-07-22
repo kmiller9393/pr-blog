@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from '../Router/Router';
 import { toggleStickyNav } from '../../utils/toggleStickyNav.js';
-import scrollToTop from '../../utils/scrollToTop';
+import { goToTop } from 'react-scrollable-anchor';
 import './Navbar.css';
 
 const isActive = ({ isCurrent }) => {
@@ -26,7 +26,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="home"
           to="/"
-          onClick={scrollToTop}
+          onClick={goToTop}
         >
           Home
         </Link>
@@ -35,7 +35,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="blog"
           to="/blog"
-          onClick={scrollToTop}
+          onClick={goToTop}
         >
           Blog
         </Link>
@@ -44,7 +44,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="lifestyle"
           to="/lifestyle"
-          onClick={scrollToTop}
+          onClick={goToTop}
         >
           Life + Style
         </Link>
@@ -53,7 +53,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="travel"
           to="/travel"
-          onClick={scrollToTop}
+          onClick={goToTop}
         >
           Travel
         </Link>
@@ -62,7 +62,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="food"
           to="/food"
-          onClick={scrollToTop}
+          onClick={goToTop}
         >
           Food
         </Link>
@@ -71,7 +71,7 @@ export default class Navbar extends Component {
           className="header-link"
           id="contact"
           to="/contact"
-          onClick={scrollToTop}
+          onClick={goToTop}
         >
           Contact
         </Link>

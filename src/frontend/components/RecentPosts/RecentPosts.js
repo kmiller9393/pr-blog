@@ -1,7 +1,7 @@
 import React from 'react';
 import RecentCard from '../RecentCard/RecentCard';
 import { Link } from '@reach/router';
-import scrollToTop from '../../utils/scrollToTop';
+import { goToTop } from 'react-scrollable-anchor';
 import './RecentPosts.css';
 
 export default props => (
@@ -9,7 +9,7 @@ export default props => (
     <h2 className="recent-header">Recent Blog Posts</h2>
     <div className="recent-card-container">
       {props.posts.map(post => (
-        <Link to={`/post/${post.id}`} onClick={scrollToTop} key={post.id}>
+        <Link to={`/post/${post.id}`} onClick={goToTop} key={post.id}>
           <RecentCard {...post} />
         </Link>
       ))}
