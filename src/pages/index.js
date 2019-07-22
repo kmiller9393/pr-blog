@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { withRouteData } from 'react-static';
-import RecentPosts from '../components/RecentPosts/RecentPosts';
-import Footer from '../components/Footer/Footer';
+import RecentPosts from '../frontend/components/RecentPosts/RecentPosts';
+import Footer from '../frontend/components/Footer/Footer';
 
 class index extends Component {
   constructor() {
@@ -24,7 +24,7 @@ class index extends Component {
     return newPosts;
   };
 
-  addIdea = (email, idea) => {
+  handleSubscribe = (email, idea) => {
     const newIdea = { ...idea, id: Date.now() };
     const ideas = [...this.state.ideas, newIdea];
     this.setState({ ideas });
@@ -52,7 +52,7 @@ class index extends Component {
           </aside>
         </article>
         <RecentPosts posts={recentPosts} />
-        <Footer addIdea={this.addIdea} />
+        <Footer handleSubscribe={this.handleSubscribe} />
       </div>
     );
   }
