@@ -1,17 +1,16 @@
 import React from 'react';
 import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
-import loadPagePosts from '../utils/loadPagePosts';
-import scrollToTop from '../utils/scrollToTop';
+import { goToTop } from 'react-scrollable-anchor';
 
 export default withRouteData(({ posts }) => (
   <div className="blog-container">
-    {loadPagePosts(posts).map(post => (
+    {posts.map(post => (
       <Link
         key={post.id}
         to={`/post/${post.id}`}
         className="card"
-        onClick={scrollToTop}
+        onClick={goToTop}
       >
         <div style={{ paddingRight: '1rem' }}>
           <img
