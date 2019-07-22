@@ -79,9 +79,11 @@ export default {
       {
         path: '/lifestyle',
         component: 'src/pages/lifestyle',
-        getData: () => ({
-          posts
-        }),
+        getData: () => {
+          let lifestylePosts = posts.filter(post => post.tag === 'Lifestyle');
+
+          return { posts: [...lifestylePosts] };
+        },
         children: posts.map(post => ({
           path: `/post/${post.id}`,
           template: 'src/pages/post',
@@ -93,9 +95,11 @@ export default {
       {
         path: '/travel',
         component: 'src/pages/travel',
-        getData: () => ({
-          posts
-        }),
+        getData: () => {
+          let travelPosts = posts.filter(post => post.tag === 'Travel');
+
+          return { posts: [...travelPosts] };
+        },
         children: posts.map(post => ({
           path: `/post/${post.id}`,
           template: 'src/pages/post',
@@ -107,9 +111,11 @@ export default {
       {
         path: '/food',
         component: 'src/pages/food',
-        getData: () => ({
-          posts
-        }),
+        getData: () => {
+          let foodPosts = posts.filter(post => post.tag === 'Food');
+
+          return { posts: [...foodPosts] };
+        },
         children: posts.map(post => ({
           path: `/post/${post.id}`,
           template: 'src/pages/post',
