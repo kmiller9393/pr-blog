@@ -6,7 +6,7 @@
     "build": "react-static build",
     "analyze": "react-static build --analyze",
     "serve": "serve dist -p 3000",
-    "start": "nodemon src/backend/server.js"
+    "start": "react-static start"
   },
   "dependencies": {
     "@reach/router": "^1.2.1",
