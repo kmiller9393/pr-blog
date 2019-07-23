@@ -2,10 +2,11 @@ import React from 'react';
 import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
 import { goToTop } from 'react-scrollable-anchor';
+import reversePosts from '../frontend/utils/reversePosts';
 
 export default withRouteData(({ posts }) => (
   <div className="blog-container">
-    {posts.map(post => (
+    {reversePosts(posts).map(post => (
       <Link
         key={post.id}
         to={`/post/${post.id}`}
@@ -22,10 +23,9 @@ export default withRouteData(({ posts }) => (
           />
         </div>
         <div>
-          <h3 style={{ color: '#2b2b2b', margin: 0 }}>{post.title}</h3>
-          <p style={{ color: '#2b2b2b', display: 'flex' }}>
-            By {post.author.name}
-          </p>
+          <h3 className="post-title" style={{ color: '#2b2b2b', margin: 0 }}>
+            {post.title}
+          </h3>
         </div>
       </Link>
     ))}

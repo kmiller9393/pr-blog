@@ -24,9 +24,8 @@
 }
 
 .subscribe-button:hover {
-  background-color: #368fcd;
-  border-color: #368fcd;
-  color: #fff;
+  background-color: #fff;
+  color: #181818;
 }
 
 ::placeholder {
