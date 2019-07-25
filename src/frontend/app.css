@@ -71,13 +71,18 @@ a {
 }
 
 .bio-text p {
-  margin: 0;
+  margin: 0 0 0 1rem;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
+}
+
+.xoxo {
+  align-self: flex-start;
+  padding-top: 1.5rem;
 }
 
 .signature {
   width: 300px;
-  margin-top: 0.5rem;
+  margin-top: 1.5rem;
 }
 
 /* Blog Pages */
@@ -161,4 +166,78 @@ a {
 .contact-header {
   font: 30px 'Open Sans', sans-serif;
   text-align: center;
+}
+
+@media only screen and (max-width: 1050px) {
+  .author-image {
+    height: 520px;
+    width: 380px;
+  }
+
+  .bio-text {
+    width: 400px;
+  }
+
+  .bio-text p {
+    font-size: 17px;
+    margin: 0 0 0 3rem;
+  }
+
+  .signature {
+    width: 250px;
+  }
+}
+
+@media only screen and (max-width: 840px) {
+  .image-container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 1100px;
+  }
+
+  .author-image {
+    margin-top: 4.5rem;
+  }
+
+  .xoxo {
+    padding: 0;
+  }
+
+  .bio-text p {
+    margin: 3.25rem 0 0 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .author-image {
+    height: 442px;
+    width: 325px;
+  }
+
+  .bio-text {
+    width: 325px;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .author-image {
+    height: 420px;
+    width: 310px;
+  }
+
+  .bio-text {
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .author-image {
+    height: 390px;
+    width: 285px;
+  }
+
+  .bio-text {
+    width: 285px;
+  }
 }
