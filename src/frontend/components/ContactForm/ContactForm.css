@@ -31,8 +31,9 @@
   border-color: #ccc;
   border-radius: 2px;
   font-size: 0.95rem;
-  height: 75px;
+  height: 90px;
   margin: 0.3rem;
+  max-height: 190px;
   max-width: 480.5px;
   width: 480.5px;
 }
