@@ -8,7 +8,7 @@
   margin: 0 1.5rem 3rem 1.5rem;
   height: 260px;
   transition: 0.4s ease-in-out;
-  width: 400px;
+  width: 410px;
 }
 
 .post-card:hover {
@@ -26,4 +26,52 @@
   padding-top: 14rem;
   position: absolute;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 915px) {
+  .post-card {
+    height: 300px;
+    width: 450px;
+  }
+
+  .recent-text {
+    font-size: 18px;
+    padding-top: 15.5rem;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .post-card {
+    height: 230px;
+    width: 345px;
+  }
+
+  .recent-text {
+    font-size: 16px;
+    padding-top: 12rem;
+  }
+}
+
+@media only screen and (max-width: 385px) {
+  .post-card {
+    height: 205px;
+    width: 310px;
+  }
+
+  .recent-text {
+    font-size: 14px;
+    padding-top: 10.5rem;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .post-card {
+    height: 190px;
+    width: 285px;
+  }
+
+  .recent-text {
+    font-size: 14px;
+    padding-top: 10rem;
+  }
 }

@@ -32,3 +32,10 @@
   width: 20px;
   padding: 0.6rem;
 }
+
+@media only screen and (max-width: 340px) {
+  .footer-header {
+    font-size: 19px;
+    margin-bottom: 2rem;
+  }
+}
