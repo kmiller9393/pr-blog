@@ -8,14 +8,6 @@ import './Header.css';
 export default () => (
   <header className="home-header">
     <div className="title-link-container">
-      <div />
-      <div>
-        <h1 className="header-h1">
-          <Link className="main-header-link" to="/">
-            KIMALEEN
-          </Link>
-        </h1>
-      </div>
       <div className="header-link-container">
         <a
           href="https://www.instagram.com/kimaleentran/"
@@ -39,6 +31,14 @@ export default () => (
           <img className="social-image" src={facebook} alt="facebook" />
         </a>
       </div>
+      <div>
+        <h1 className="header-h1">
+          <Link className="main-header-link" to="/">
+            KIMALEEN
+          </Link>
+        </h1>
+      </div>
+      <div />
     </div>
   </header>
 );

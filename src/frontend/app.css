@@ -81,7 +81,7 @@ a {
 }
 
 .signature {
-  width: 300px;
+  width: 200px;
   margin-top: 1.5rem;
 }
 
@@ -90,30 +90,75 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin: 0 120px;
 }
 
-.post-title {
-  font: 18px 'Open Sans', sans-serif;
-  padding: 4px;
+.card h1,
+.card h2 {
+  z-index: -10;
 }
 
 .card {
   align-items: center;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 1px solid #eee;
   border-radius: 5px;
   display: flex;
-  margin: 16px 10px;
-  overflow: hidden;
-  width: 455px;
+  height: 355px;
+  margin: 16px;
+  position: relative;
+  width: 355px;
 }
 
-.card:hover {
-  box-shadow: 1px 1px 5px #999;
-}
-
-.card-img {
-  display: block;
+.card:hover .overlay {
+  color: #f7f7f7;
+  background-color: #181818;
+  border-radius: 5px;
+  opacity: 0.7;
   height: 100%;
+  position: absolute;
+  transition: 0.3s;
+  width: 100%;
+}
+
+.card:hover .post-title {
+  color: #f7f7f7;
+  border-radius: 5px;
+  font: 20px 'Open Sans', sans-serif;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s;
+  width: 100%;
+  z-index: 1;
+}
+
+.card:hover .sub-header {
+  color: #f7f7f7;
+  border-radius: 5px;
+  font: 19px 'Open Sans', sans-serif;
+  height: 100%;
+  position: absolute;
+  transition: 0.3s;
+  top: 60%;
+  width: 100%;
+  z-index: 1;
+}
+
+.post-title {
+  color: #f7f7f7;
+  display: flex;
+  font: 29px 'Open Sans', sans-serif;
+  justify-content: center;
+  margin: 0;
+  align-items: center;
+}
+
+.sub-header {
+  display: flex;
+  font-weight: 100;
+  justify-content: center;
 }
 
 /* Post */
@@ -181,10 +226,6 @@ a {
   .bio-text p {
     font-size: 17px;
     margin: 0 0 0 3rem;
-  }
-
-  .signature {
-    width: 250px;
   }
 }
 
