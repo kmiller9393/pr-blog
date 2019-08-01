@@ -23,8 +23,8 @@
 
 .header-link-container {
   display: flex;
-  justify-content: flex-end;
-  margin-right: 3rem;
+  justify-content: flex-start;
+  margin-left: 3rem;
   margin-top: 0.5rem;
 }
 
