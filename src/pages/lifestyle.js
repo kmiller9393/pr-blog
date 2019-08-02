@@ -12,21 +12,15 @@ export default withRouteData(({ posts }) => (
         to={`/post/${post.id}`}
         className="card"
         onClick={goToTop}
+        style={{
+          backgroundImage: `url("https://media.graphcms.com/${
+            post.image[0].handle
+          }")`
+        }}
       >
-        <div style={{ paddingRight: '1rem' }}>
-          <img
-            alt={post.title}
-            className="card-img"
-            src={`https://media.graphcms.com/resize=w:170,h:150,fit:crop/${
-              post.image[0].handle
-            }`}
-          />
-        </div>
-        <div>
-          <h3 className="post-title" style={{ color: '#2b2b2b', margin: 0 }}>
-            {post.title}
-          </h3>
-        </div>
+        <div className="overlay" />
+        <h1 className="post-title">{post.title}</h1>
+        <h2 className="sub-header">View Post</h2>
       </Link>
     ))}
   </div>
