@@ -70,11 +70,20 @@ export default {
         }))
       },
       {
-        path: '/about',
-        component: 'src/pages/about',
-        getData: () => ({
-          authors
-        })
+        path: '/thoughts',
+        component: 'src/pages/thoughts',
+        getData: () => {
+          let thoughtsPosts = posts.filter(post => post.tag === 'Thoughts');
+
+          return { posts: [...thoughtsPosts] };
+        },
+        children: posts.map(post => ({
+          path: `/post/${post.id}`,
+          template: 'src/pages/post',
+          getData: () => ({
+            post
+          })
+        }))
       },
       {
         path: '/lifestyle',

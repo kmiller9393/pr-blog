@@ -42,6 +42,15 @@ export default class Navbar extends Component {
         <Link
           getProps={isActive}
           className="header-link"
+          id="thoughts"
+          to="/thoughts"
+          onClick={goToTop}
+        >
+          Thoughts
+        </Link>
+        <Link
+          getProps={isActive}
+          className="header-link"
           id="lifestyle"
           to="/lifestyle"
           onClick={goToTop}
