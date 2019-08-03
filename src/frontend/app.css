@@ -75,13 +75,8 @@ a {
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
-.xoxo {
-  align-self: flex-start;
-  padding-top: 1.5rem;
-}
-
 .signature {
-  width: 200px;
+  width: 400px;
   margin-top: 1.5rem;
 }
 
@@ -138,7 +133,7 @@ a {
   color: #f7f7f7;
   border-radius: 5px;
   font: 19px 'Open Sans', sans-serif;
-  height: 100%;
+  height: auto;
   position: absolute;
   transition: 0.3s;
   top: 60%;
@@ -156,6 +151,7 @@ a {
 }
 
 .sub-header {
+  color: #f7f7f7;
   display: flex;
   font-weight: 100;
   justify-content: center;

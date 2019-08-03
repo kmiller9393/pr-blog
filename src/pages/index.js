@@ -49,7 +49,6 @@ class index extends Component {
           </aside>
           <aside className="bio-text">
             <p>{bibliography}</p>
-            <p className="xoxo">xoxo,</p>
             <img src={signature} className="signature" alt="signature" />
           </aside>
         </article>
