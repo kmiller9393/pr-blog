@@ -2,7 +2,7 @@ import React from 'react';
 import './RecentCard.css';
 
 export default props => (
-  <article
+  <div
     className="post-card"
     style={{
       backgroundImage: `url("https://media.graphcms.com/${
@@ -14,5 +14,5 @@ export default props => (
     }}
   >
     <h5 className="recent-text">{props.title}</h5>
-  </article>
+  </div>
 );

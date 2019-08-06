@@ -8,13 +8,15 @@
 }
 
 .recent-card-container {
+  align-items: center;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .recent-link {
+  display: flex;
+  justify-content: center;
   height: 260px;
   width: 410px;
   margin: 0 1.5rem 3rem 1.5rem;
@@ -23,10 +25,44 @@
 .recent-header {
   font: 30px 'Open Sans', sans-serif;
   margin: 2rem 0 3rem 0;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1375px) {
+  .recent-link {
+    height: 400px;
+    width: 600px;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .recent-link {
+    height: 300px;
+    width: 450px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .recent-link {
+    height: 232.5px;
+    width: 349px;
+  }
 }
 
 @media only screen and (max-width: 385px) {
   .recent-header {
     font: 25px 'Open Sans', sans-serif;
+  }
+
+  .recent-link {
+    height: 205px;
+    width: 310px;
+  }
+}
+
+@media only screen and (max-width: 340px) {
+  .recent-link {
+    height: 190px;
+    width: 285px;
   }
 }
