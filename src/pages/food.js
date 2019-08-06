@@ -1,4 +1,5 @@
 import React from 'react';
+import Footer from '../frontend/components/Footer/Footer';
 import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
 import { goToTop } from 'react-scrollable-anchor';
@@ -26,5 +27,6 @@ export default withRouteData(({ posts }) => (
         </Link>
       ))}
     </div>
+    <Footer />
   </div>
 ));

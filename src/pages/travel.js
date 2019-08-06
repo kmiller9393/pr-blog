@@ -3,6 +3,7 @@ import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
 import { goToTop } from 'react-scrollable-anchor';
 import reversePosts from '../frontend/utils/reversePosts';
+import Footer from '../frontend/components/Footer/Footer';
 
 export default withRouteData(({ posts }) => (
   <div>
@@ -26,5 +27,6 @@ export default withRouteData(({ posts }) => (
         </Link>
       ))}
     </div>
+    <Footer />
   </div>
 ));

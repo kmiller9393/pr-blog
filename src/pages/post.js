@@ -4,7 +4,7 @@ import Markdown from 'react-markdown';
 
 export default withRouteData(({ post }) => (
   <article className="blog-card">
-    {post && <h1 className="post-main-title ">{post.title}</h1>}
+    {post && <h1 className="post-main-title">{post.title}</h1>}
     {post && (
       <div className="placeholder">
         <img
