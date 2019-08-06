@@ -75,7 +75,7 @@ export default class ContactForm extends Component {
             required
           />
         </div>
-        <button className="contact-info-button">Send Email!</button>
+        <button className="contact-info-button">Send!</button>
       </form>
     );
   }
