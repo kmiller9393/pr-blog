@@ -34,13 +34,12 @@ a {
 
 .image-container {
   border-bottom: 1.5px solid #d8d8d8;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: space-around;
 }
 
 .banner-image {
-  background-image: url('https://images.unsplash.com/photo-1501419737817-eadda6b445e3?ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80');
-  background-position: 80%;
+  background-image: url('https://storage.needpix.com/rsynced_images/water-background-1425094730JA9.jpg');
   background-size: cover;
   height: 100%;
   width: 100%;
@@ -53,32 +52,39 @@ a {
 }
 
 .author-image {
-  box-shadow: 0 0 10px #191919;
-  height: 600px;
-  width: 400px;
-  -webkit-box-shadow: 0 0 5px #191919;
+  border-radius: 2px;
+  box-shadow: 0 0 6px #191919;
+  height: 650px;
+  margin-left: 3rem;
+  width: 433px;
+  -webkit-box-shadow: 0 0 6px #191919;
 }
 
 .bio-text {
+  align-self: center;
   align-items: center;
+  background-color: rgb(244, 244, 244);
+  border-radius: 5px;
   display: flex;
   flex-direction: column;
   font-size: 20px;
   font-weight: 500;
+  height: 500px;
   justify-content: center;
   line-height: 140%;
-  padding-bottom: 4rem;
-  width: 75%;
+  margin-right: 3rem;
+  opacity: 0.9;
+  padding: 1.5rem 1.5rem 0 1.5rem;
+  width: 33%;
 }
 
 .bio-text p {
-  margin: 0 0 0 1rem;
+  margin: 1rem;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.1);
 }
 
 .signature {
-  width: 400px;
-  margin-top: 1.5rem;
+  width: 350px;
 }
 
 /* Blog Pages */
@@ -91,7 +97,7 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin: 0 120px;
+  margin: 0 120px 90px 120px;
 }
 
 .card h1,
@@ -171,6 +177,7 @@ a {
 }
 
 .post-main-title {
+  font: 28px 'Open Sans', sans-serif;
   text-align: center;
 }
 
@@ -195,18 +202,20 @@ a {
 /* Contact */
 .contact-container {
   align-items: center;
-  background-image: url('https://images.unsplash.com/photo-1563279057-94a1772d8591?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80');
+  background-image: url('https://storage.needpix.com/rsynced_images/water-background-1425094730JA9.jpg');
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
 }
 
 .contact-form-container {
   background-color: rgb(244, 244, 244);
-  border-radius: 7px;
-  margin: 100px 0 170px 0;
+  border-radius: 5px;
+  margin: 100px 0 100px 0;
   padding: 0 15px 15px 15px;
-  opacity: 0.95;
+  opacity: 0.9;
   width: 500px;
 }
 
@@ -215,23 +224,39 @@ a {
   text-align: center;
 }
 
-@media only screen and (max-width: 1050px) {
+@media only screen and (max-width: 1067px) {
   .author-image {
     height: 520px;
     width: 346px;
   }
 
   .bio-text {
-    width: 400px;
+    height: 420px;
+    padding: 0.75rem 0.75rem 0 0.75rem;
+    width: 350px;
   }
 
   .bio-text p {
     font-size: 17px;
-    margin: 0 0 0 3rem;
+  }
+
+  .signature {
+    margin-top: 0;
+    width: 320px;
   }
 }
 
-@media only screen and (max-width: 840px) {
+@media only screen and (max-width: 970px) {
+  .author-image {
+    margin-left: 0.5rem;
+  }
+
+  .bio-text {
+    margin-right: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 815px) {
   .image-container {
     align-items: center;
     display: flex;
@@ -240,22 +265,43 @@ a {
   }
 
   .author-image {
-    margin-top: 4.5rem;
+    height: 550px;
+    margin: 3.25rem 0 0 0;
+    width: 366px;
   }
 
   .xoxo {
     padding: 0;
   }
 
+  .bio-text {
+    margin: 0 0 4.5rem 0;
+    height: auto;
+    padding: 1rem 0.75rem 0.5rem 0.75rem;
+    width: 75%;
+  }
+
   .bio-text p {
-    margin: 3.25rem 0 0 0;
+    margin-bottom: 0;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .bio-text {
+    margin: 0 0 2rem 0;
+    width: 400px;
+  }
+
+  .bio-text p {
+    font-size: 16px;
   }
 }
 
 @media only screen and (max-width: 450px) {
   .author-image {
-    height: 442px;
-    width: 295px;
+    height: 523.5px;
+    margin-top: 1.75rem;
+    width: 349px;
   }
 
   .bio-text {
@@ -263,28 +309,32 @@ a {
   }
 
   .signature {
-    width: 300px;
+    width: 260px;
   }
 }
 
 @media only screen and (max-width: 385px) {
   .author-image {
-    height: 420px;
-    width: 280px;
+    height: 465px;
+    width: 310px;
   }
 
   .bio-text {
-    width: 310px;
+    width: 286px;
   }
 }
 
 @media only screen and (max-width: 340px) {
   .author-image {
-    height: 390px;
-    width: 260px;
+    height: 427.5px;
+    width: 285px;
   }
 
   .bio-text {
-    width: 285px;
+    width: 261px;
+  }
+
+  .signature {
+    width: 230px;
   }
 }
