@@ -1,4 +1,5 @@
 .home-header {
+  padding-top: 1rem;
   text-align: center;
 }
 
@@ -11,8 +12,7 @@
   font-size: 65px;
   font-style: italic;
   font-weight: 300;
-  margin-top: -0.5rem;
-  margin-bottom: 0;
+  margin: 0;
   text-align: center;
   text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.3);
 }
@@ -24,8 +24,7 @@
 .header-link-container {
   display: flex;
   justify-content: flex-start;
-  margin-left: 3rem;
-  margin-top: 0.5rem;
+  margin: 0.5rem 0 0 3rem;
 }
 
 .social-image {
