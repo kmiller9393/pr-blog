@@ -61,3 +61,10 @@ span.logo {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
   font-weight: 700;
 }
+
+@media only screen and (max-width: 990px) {
+  .header-link,
+  .active {
+    display: none;
+  }
+}
