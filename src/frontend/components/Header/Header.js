@@ -40,7 +40,8 @@ const Header = props => {
             </Link>
           </h1>
         </div>
-        <div>
+        <div className="header-filler" />
+        <div className="menu-btn-container">
           <DrawerButton toggleDrawer={props.toggleDrawer} />
         </div>
       </div>
