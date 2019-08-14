@@ -224,6 +224,7 @@ a {
   text-align: center;
 }
 
+/* media queries */
 @media only screen and (max-width: 1067px) {
   .author-image {
     height: 520px;
