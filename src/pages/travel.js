@@ -4,9 +4,11 @@ import { Link } from '@reach/router';
 import { goToTop } from 'react-scrollable-anchor';
 import reversePosts from '../frontend/utils/reversePosts';
 import Footer from '../frontend/components/Footer/Footer';
+import Navbar from '../frontend/components/Navbar/Navbar';
 
 export default withRouteData(({ posts }) => (
   <div>
+    <Navbar />
     <h1 className="post-header">Travel</h1>
     <div className="blog-container">
       {reversePosts(posts).map(post => (

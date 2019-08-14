@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../frontend/components/Footer/Footer';
+import Navbar from '../frontend/components/Navbar/Navbar';
 import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
 import { goToTop } from 'react-scrollable-anchor';
@@ -7,6 +8,7 @@ import reversePosts from '../frontend/utils/reversePosts';
 
 export default withRouteData(({ posts }) => (
   <div>
+    <Navbar />
     <h1 className="post-header">All Posts</h1>
     <div className="blog-container">
       {reversePosts(posts).map(post => (

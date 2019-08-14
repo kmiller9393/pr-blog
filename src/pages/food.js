@@ -3,10 +3,12 @@ import Footer from '../frontend/components/Footer/Footer';
 import { withRouteData } from 'react-static';
 import { Link } from '@reach/router';
 import { goToTop } from 'react-scrollable-anchor';
+import Navbar from '../frontend/components/Navbar/Navbar';
 import reversePosts from '../frontend/utils/reversePosts';
 
 export default withRouteData(({ posts }) => (
   <div>
+    <Navbar />
     <h1 className="post-header">Food</h1>
     <div className="blog-container">
       {reversePosts(posts).map(post => (
