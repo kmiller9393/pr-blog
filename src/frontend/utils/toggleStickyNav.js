@@ -8,6 +8,8 @@ export const toggleStickyNav = () => {
 
   let totalHeight = header.offsetHeight;
 
+  if (window.innerWidth <= 510) return;
+
   if (window.scrollY >= topOfNav) {
     document.body.style.marginTop = nav.offsetHeight + 'px';
     document.body.classList.add('fixed-nav');
