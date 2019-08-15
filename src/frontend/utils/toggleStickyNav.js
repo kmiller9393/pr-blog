@@ -1,24 +1,22 @@
 export const toggleStickyNav = () => {
-  const nav = document.querySelector('.header-nav');
+  const nav = document.querySelector('.nav-link-container');
   const header = document.querySelector('.home-header');
 
-  if (nav === null) return;
+  if (nav === null || window.innerWidth <= 510) return;
 
   let topOfNav = nav.offsetTop;
 
-  let totalHeight = header.offsetHeight;
+  let headerHeight = header.offsetHeight;
 
-  if (window.innerWidth <= 510) return;
+  let navHeight = nav.offsetHeight;
 
   if (window.scrollY >= topOfNav) {
-    document.body.style.marginTop = nav.offsetHeight + 'px';
+    header.style.marginBottom = navHeight + 'px';
     document.body.classList.add('fixed-nav');
-    nav.style.marginTop = -(nav.offsetHeight + header.offsetHeight) + 'px';
   }
 
-  if (window.scrollY <= totalHeight) {
-    document.body.style.marginTop = 0;
+  if (window.scrollY <= headerHeight) {
+    header.style.marginBottom = 0;
     document.body.classList.remove('fixed-nav');
-    nav.style.marginTop = 0;
   }
 };

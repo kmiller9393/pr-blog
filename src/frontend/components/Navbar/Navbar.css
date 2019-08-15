@@ -13,12 +13,21 @@ nav a {
   flex-direction: column;
   align-items: center;
   position: relative;
+  width: 100%;
   width: 100vw;
 }
 
-.fixed-nav nav {
+.nav-link-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.fixed-nav div.nav-link-container {
   background-color: #fff;
+  box-shadow: 0 7px 6px -6px rgba(32, 33, 36, 0.35);
   position: fixed;
+  width: 100%;
   width: 100vw;
   z-index: 1000;
 }

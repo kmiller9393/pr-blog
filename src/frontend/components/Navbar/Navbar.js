@@ -39,7 +39,7 @@ export default class Navbar extends Component {
         <Sidebar display={drawerOpen} />
         {drawerOpen && <Backdrop toggleDrawer={toggleDrawer} />}
         <Header toggleDrawer={toggleDrawer} />
-        <div>
+        <div className="nav-link-container">
           <span className="logo">K</span>
           <Link
             getProps={isActive}
