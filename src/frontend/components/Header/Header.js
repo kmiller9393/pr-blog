@@ -33,13 +33,11 @@ const Header = props => {
             <img className="social-image" src={facebook} alt="facebook" />
           </a>
         </div>
-        <div>
-          <h1 className="header-h1">
-            <Link className="main-header-link" to="/">
-              KIMALEEN
-            </Link>
-          </h1>
-        </div>
+        <h1 className="header-h1">
+          <Link className="main-header-link" to="/">
+            KIMALEEN
+          </Link>
+        </h1>
         <div className="header-filler" />
         <div className="menu-btn-container">
           <DrawerButton toggleDrawer={props.toggleDrawer} />
