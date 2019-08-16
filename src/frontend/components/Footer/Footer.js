@@ -19,21 +19,33 @@ export default class Footer extends Component {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="social-image" src={instagram} alt="instagram" />
+            <img
+              className="social-footer-image"
+              src={instagram}
+              alt="instagram"
+            />
           </a>
           <a
             href="https://www.linkedin.com/in/kimaleentran/"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="social-image" src={linkedin} alt="linkedin" />
+            <img
+              className="social-footer-image"
+              src={linkedin}
+              alt="linkedin"
+            />
           </a>
           <a
             href="https://www.facebook.com/kimaleen.tran.3"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img className="social-image" src={facebook} alt="facebook" />
+            <img
+              className="social-footer-image"
+              src={facebook}
+              alt="facebook"
+            />
           </a>
         </div>
       </section>
