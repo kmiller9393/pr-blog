@@ -7,7 +7,7 @@
 
 @media only screen and (max-width: 740px) {
   .home-menu-button {
-    margin: 0.79rem 0 0 9.5rem;
+    margin: 0.79rem 0 0 8rem;
   }
 }
 
@@ -20,6 +20,12 @@
 @media only screen and (max-width: 500px) {
   .home-menu-button {
     margin: 0.5rem 0 0 5rem;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .home-menu-button {
+    margin: 0.5rem 1rem 0 5rem;
   }
 }
 

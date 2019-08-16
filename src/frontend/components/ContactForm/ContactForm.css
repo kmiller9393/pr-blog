@@ -16,6 +16,7 @@
   font-size: 0.95rem;
   height: 30px;
   margin: 1rem;
+  max-width: 100%;
   width: 221px;
 }
 
@@ -69,4 +70,35 @@
 
 :-ms-input-placeholder {
   padding-left: 0.5rem;
+}
+
+@media only screen and (max-width: 675px) {
+  .contact-message {
+    max-width: 100%;
+  }
+
+  .contact-info-button {
+    height: 35px;
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .contact-message {
+    max-height: 200px;
+  }
+
+  .contact-info-button {
+    margin-top: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 370px) {
+  .contact-input {
+    margin: 0.5rem;
+  }
+
+  .contact-info-button {
+    margin-top: 0.3rem;
+  }
 }

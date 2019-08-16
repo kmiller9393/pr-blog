@@ -90,7 +90,7 @@ a {
 /* Blog Pages */
 .post-header {
   font: 32px 'Open Sans', sans-serif;
-  margin-left: 140px;
+  margin: 1rem 0 0 140px;
 }
 
 .blog-container {
@@ -170,7 +170,7 @@ a {
 }
 
 /* Post */
-.blog-card {
+.blog-post {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -181,17 +181,39 @@ a {
   text-align: center;
 }
 
-.placeholder {
-  height: 366;
+.post-image {
+  height: 490px;
+  width: 735px;
 }
 
 .blog-content {
-  margin: 0 auto;
-  width: 640px;
+  margin: 0 auto 1rem auto;
+  width: 735px;
 }
 
 .blog-content h2 {
   text-align: center;
+  font: 26px 'Open Sans', sans-serif;
+}
+
+.blog-content h3 {
+  text-align: center;
+  font: 24px 'Open Sans', sans-serif;
+}
+
+.blog-content h4 {
+  text-align: center;
+  font: 22px 'Open Sans', sans-serif;
+}
+
+.blog-content h5 {
+  text-align: center;
+  font: 20px 'Open Sans', sans-serif;
+}
+
+.blog-content h6 {
+  text-align: center;
+  font: 18px 'Open Sans', sans-serif;
 }
 
 .blog-content p {
@@ -247,6 +269,23 @@ a {
   }
 }
 
+@media only screen and (max-width: 1017px) {
+  .blog-container {
+    margin: 0;
+    justify-content: center;
+  }
+
+  .post-header {
+    margin: 1rem 0 0 0;
+    text-align: center;
+  }
+
+  .card {
+    height: 450px;
+    width: 450px;
+  }
+}
+
 @media only screen and (max-width: 970px) {
   .author-image {
     margin-left: 0.5rem;
@@ -287,14 +326,89 @@ a {
   }
 }
 
+@media only screen and (max-width: 785px) {
+  .post-main-title {
+    font-size: 24px;
+  }
+
+  .blog-content h2 {
+    font: 22.5px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h3 {
+    font: 21px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h4 {
+    font: 19.5px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h5 {
+    font: 18px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h6 {
+    font: 17.5px 'Open Sans', sans-serif;
+  }
+
+  .post-image {
+    height: 333px;
+    width: 500px;
+  }
+
+  .blog-content {
+    width: 500px;
+  }
+}
+
+@media only screen and (max-width: 675px) {
+  .contact-form-container {
+    height: 360px;
+    width: 350px;
+  }
+
+  .contact-header {
+    font-size: 24px;
+    margin-bottom: 0;
+  }
+
+  .contact-info {
+    max-width: 90%;
+  }
+}
+
 @media only screen and (max-width: 576px) {
   .bio-text {
     margin: 0 0 2rem 0;
     width: 400px;
   }
 
+  .card {
+    height: 350px;
+    width: 350px;
+  }
+
   .bio-text p {
     font-size: 16px;
+  }
+
+  .post-header {
+    font-size: 22.5px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .post-main-title {
+    font-size: 20px;
+  }
+
+  .post-image {
+    height: 283px;
+    width: 425px;
+  }
+
+  .blog-content {
+    width: 425px;
   }
 }
 
@@ -312,6 +426,80 @@ a {
   .signature {
     width: 260px;
   }
+
+  .contact-form-container {
+    height: 325px;
+    width: 310px;
+  }
+
+  .contact-header {
+    font-size: 20px;
+    margin-bottom: 0;
+  }
+
+  .contact-info {
+    max-width: 90%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .post-main-title {
+    font-size: 18px;
+    margin: 1.25rem 0;
+  }
+
+  .blog-content h2 {
+    text-align: center;
+    font: 17.5px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h3 {
+    text-align: center;
+    font: 17.25px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h4 {
+    text-align: center;
+    font: 17px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h5 {
+    text-align: center;
+    font: 16.75px 'Open Sans', sans-serif;
+  }
+
+  .blog-content h6 {
+    text-align: center;
+    font: 16.5px 'Open Sans', sans-serif;
+  }
+
+  .post-image {
+    height: 200px;
+    width: 300px;
+  }
+
+  .blog-content {
+    width: 300px;
+  }
+
+  .blog-content p {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .card {
+    height: 285px;
+    width: 285px;
+  }
+
+  .card:hover .post-title {
+    font: 16px 'Open Sans', sans-serif;
+  }
+
+  .card:hover .sub-header {
+    font: 15px 'Open Sans', sans-serif;
+  }
 }
 
 @media only screen and (max-width: 385px) {
@@ -325,7 +513,7 @@ a {
   }
 }
 
-@media only screen and (max-width: 340px) {
+@media only screen and (max-width: 370px) {
   .author-image {
     height: 427.5px;
     width: 285px;
@@ -337,5 +525,19 @@ a {
 
   .signature {
     width: 230px;
+  }
+
+  .contact-form-container {
+    height: 285px;
+    width: 275px;
+  }
+
+  .contact-header {
+    font-size: 19px;
+    margin-bottom: 0;
+  }
+
+  .contact-info {
+    max-width: 90%;
   }
 }
