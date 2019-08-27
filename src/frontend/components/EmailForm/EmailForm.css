@@ -11,6 +11,10 @@
   margin: 0.3rem;
 }
 
+.error-input {
+  border-color: red;
+}
+
 .subscribe-button {
   background-color: #181818;
   border-color: #f7f7f7;
