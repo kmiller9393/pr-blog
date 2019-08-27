@@ -6,10 +6,6 @@ import Navbar from '../frontend/components/Navbar/Navbar';
 import signature from '../frontend/images/signature.svg';
 
 class index extends Component {
-  state = {
-    ideas: []
-  };
-
   getPosts = () => {
     const { posts } = this.props;
     let newPosts = [];
@@ -21,12 +17,6 @@ class index extends Component {
     }
 
     return newPosts;
-  };
-
-  handleSubscribe = (email, idea) => {
-    const newIdea = { ...idea, id: Date.now() };
-    const ideas = [...this.state.ideas, newIdea];
-    this.setState({ ideas });
   };
 
   render() {
@@ -52,7 +42,7 @@ class index extends Component {
           </aside>
         </article>
         <RecentPosts posts={recentPosts} />
-        <Footer handleSubscribe={this.handleSubscribe} />
+        <Footer />
       </div>
     );
   }
