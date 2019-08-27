@@ -11,7 +11,7 @@ export default class Footer extends Component {
       <section className="footer">
         <div className="weekly-email">
           <h3 className="footer-header">Subscribe to Receive Updates</h3>
-          <EmailForm addIdea={this.props.addIdea} />
+          <EmailForm />
         </div>
         <div className="footer-link-container">
           <a
