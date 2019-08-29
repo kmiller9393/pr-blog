@@ -1,5 +1,5 @@
-const express = require('express');
 const sendEmail = require('./utils/sendEmail');
+const express = require('express');
 
 const router = express.Router();
 
