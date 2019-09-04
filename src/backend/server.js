@@ -16,6 +16,7 @@ const query = `
     id
     title
     content
+    createdAt
   }
 }
 `;
@@ -27,24 +28,18 @@ const getPosts = async () => {
 };
 
 new CronJob.CronJob(
-  '00 00 06 * * 1-5',
-  () => {
-    checkPosts(getPosts());
-    console.log(`You will see this message every second ${Math.random()}`);
+  '00 00 05 * * 1-5',
+  // '* * * * * *',
+  async () => {
+    const newDate = new Date();
+
+    checkPosts(await getPosts(), newDate); //run through posts and send email with updated post(s)
     console.log('ontick', new Date());
   },
   null,
   true,
   'America/Los_Angeles'
 );
-
-console.log('Before job instantiation');
-const job = new CronJob('00 30 11 * * 1-5', function() {
-  const d = new Date();
-  console.log('onTick:', d);
-});
-console.log('After job instantiation');
-job.start();
 
 dotenv.config();
 

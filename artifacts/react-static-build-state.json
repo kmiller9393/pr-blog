@@ -39,7 +39,7 @@
     "HTML_TEMPLATE": "/Users/kumi5605/Desktop/projects/pr-blog/dist/index.html",
     "STATIC_DATA": "/Users/kumi5605/Desktop/projects/pr-blog/dist/staticData"
   },
-  "siteRoot": "",
+  "siteRoot": "/",
   "basePath": "",
   "publicPath": "/",
   "assetsPath": "",
@@ -47,7 +47,7 @@
   "inlineCss": false,
   "babelExcludes": [],
   "devServer": {
-    "host": "http://localhost",
+    "host": "localhost",
     "port": 3000
   },
   "terser": {
