@@ -1,6 +1,6 @@
-# HerBlog
+# kt-blog
 
-HerBlog is a web application that utilizes data fetched from a GraphQL endpoint to display blog posts filtered by travel, food and lifestyle. This application also allows visitors to the site to send emails to contact the blog owner directly with feedback and messages. This app is built with React.js, React Static, GraphQL, GraphCMS and Express.js.
+kt-blog is a web application that utilizes data fetched from a GraphQL endpoint to display blog posts filtered by travel, food and lifestyle. This application also allows visitors to the site to send emails to contact the blog owner directly with feedback and messages. This app is built with React.js, React Static, GraphQL, GraphCMS and Express.js.
 
 ## NOTE: Currently adding finishing touches to application (work in progress) before deploying to production.
 
@@ -8,11 +8,11 @@ HerBlog is a web application that utilizes data fetched from a GraphQL endpoint 
 
 1. Clone down this repository.
 
-2. `cd` into the `HerBlog` directory.
+2. `cd` into the `kt-blog` directory.
 
 3. Run `npm install`.
 
-4. Run `npm start`.
+4. Run `nodemon ./src/backend/server.js`.
 
 # Landing Page
 
