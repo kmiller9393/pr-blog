@@ -16,16 +16,16 @@ kt-blog is a web application that utilizes data fetched from a GraphQL endpoint 
 
 # Landing Page
 
-<img src="./src/frontend/images/her-blog-landing.png" alt="homepage">
+<img src="./src/frontend/images/kt-blog-landing.svg" alt="homepage">
 
 # Bottom of Landing Page/Footer
 
-<img src="./src/frontend/images/her-blog-bottom-landing.png" alt="footer">
+<img src="./src/frontend/images/kt-blog-footer.svg" alt="footer">
 
 # Blog Posts Page
 
-<img src="./src/frontend/images/her-blog-all.png" alt="blog posts">
+<img src="./src/frontend/images/kt-blog-posts.svg" alt="blog posts">
 
 # Contact Page
 
-<img src="./src/frontend/images/her-blog-contact.png" alt="contact page">
+<img src="./src/frontend/images/kt-blog-contact.svg" alt="contact page">
